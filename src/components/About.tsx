@@ -5,91 +5,80 @@ const About = () => {
   const achievements = [
     {
       icon: GraduationCap,
-      title: "Eğitim",
-      description: "Hacettepe Üniversitesi Beslenme ve Diyetetik Bölümü mezunu, yüksek lisans tamamladı."
+      title: 'Eğitim Odaklı Yaklaşım',
+      description: 'Psikolojik danışmanlık sürecini bilimsel temellere dayanan, güncel ve etik bir bakış açısıyla yürütürüm.',
     },
     {
       icon: Award,
-      title: "Sertifikalar",
-      description: "Sporcu Beslenmesi, Çocuk Beslenmesi ve Klinik Beslenme sertifikaları."
+      title: 'Etik ve Gizlilik',
+      description: 'Her görüşmeyi danışanın sınırlarına, mahremiyetine ve güven duygusuna özen göstererek planlarım.',
     },
     {
       icon: Users,
-      title: "Deneyim",
-      description: "500'den fazla danışana bireysel beslenme programı hazırlama deneyimi."
+      title: 'Bireysel Süreç Takibi',
+      description: 'Her danışanın yaşam deneyimini, ihtiyaçlarını ve hedeflerini merkeze alan kişiselleştirilmiş bir yol izlerim.',
     },
     {
       icon: Heart,
-      title: "Uzmanlık",
-      description: "Obezite, diyabet, kalp hastalıkları ve sporcu beslenmesi konularında uzman."
-    }
+      title: 'Danışan Odaklı Çalışma',
+      description: 'Anlaşılmaya, güçlenmeye ve içsel denge kurmaya alan açan sıcak ve destekleyici bir görüşme ortamı sunarım.',
+    },
   ];
 
   const timeline = [
     {
-      year: "2024 - Günümüz",
-      title: "Klinik Beslenme Uzmanı",
-      description: "Özel pratikte bireysel danışmanlık ve online beslenme koçluğu."
+      year: 'İlk Görüşme',
+      title: 'İhtiyacı Birlikte Anlama',
+      description: 'Süreci, başvuru nedeninizi, beklentilerinizi ve size iyi gelecek çalışma çerçevesini birlikte belirleyerek başlatırız.',
     },
     {
-      year: "2020 - 2024",
-      title: "Hastane Diyetisyeni",
-      description: "Acıbadem Hastanesi'nde klinik beslenme uzmanı olarak görev aldı."
+      year: 'Süreç Planlama',
+      title: 'Kişiye Özel Yol Haritası',
+      description: 'Danışmanlık hedeflerinize uygun, sizi zorlamadan ilerleyen ve düzenli takip içeren bir yapı oluştururum.',
     },
     {
-      year: "2018 - 2020",
-      title: "Yüksek Lisans",
-      description: "İstanbul Üniversitesi'nde Beslenme Bilimleri alanında yüksek lisans."
+      year: 'Düzenli Görüşmeler',
+      title: 'Güvenli ve Sürdürülebilir Destek',
+      description: 'Görüşmelerde duygularınızı, düşüncelerinizi ve yaşadığınız zorlukları güvenli bir alanda ele alırız.',
     },
     {
-      year: "2014 - 2018",
-      title: "Lisans Eğitimi",
-      description: "Hacettepe Üniversitesi Beslenme ve Diyetetik Bölümü."
-    }
+      year: 'Değerlendirme',
+      title: 'İlerlemenin Gözden Geçirilmesi',
+      description: 'Süreç boyunca kazanımlarınızı değerlendirir, ihtiyaçlarınıza göre danışmanlık akışını birlikte güncelleriz.',
+    },
   ];
 
   return (
     <section id="about" className="py-20 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Hakkımda
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Sağlıklı yaşam konusundaki tutkum ve bilimsel yaklaşımımla, 
-            her danışanıma özel çözümler sunarak onların yaşam kalitesini artırmayı hedefliyorum.
+            Her bireyin yaşam öyküsünün kendine özgü olduğuna inanıyor, psikolojik danışmanlık sürecini güven, açıklık ve iş birliği temelinde yürütüyorum.
           </p>
         </div>
 
-        {/* Bio Section */}
         <div className="mb-16">
           <Card className="card-professional max-w-4xl mx-auto">
             <CardContent className="p-8">
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                Merhaba! Ben Diyetisyen Ayşe Kaya. 10 yılı aşkın süredir beslenme ve sağlıklı yaşam alanında 
-                çalışıyorum. Hacettepe Üniversitesi Beslenme ve Diyetetik Bölümü'nden mezun olduktan sonra, 
-                İstanbul Üniversitesi'nde yüksek lisansımı tamamladım.
+                Merhaba, ben Psk. Dan. Ruveyda Özdemir. Danışanlarımla kurduğum ilişkide yargısız, güvenli ve destekleyici bir alan oluşturmayı önemsiyorum. Her bireyin yaşadığı güçlüğün, hayat hikayesi içinde anlamı olduğuna inanıyor; süreci bu bütünlüğü gözeterek ele alıyorum.
               </p>
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                Beslenme planlarımı hazırlarken sadece kiloları değil, danışanlarımın yaşam tarzını, 
-                alışkanlıklarını ve hedeflerini de göz önünde bulundururum. Amacım, sürdürülebilir 
-                ve sağlıklı yaşam tarzı değişiklikleri yaratmaktır.
+                Görüşmelerimde danışanın ihtiyaçlarını, duygusal ritmini ve hedeflerini merkeze alan kişiselleştirilmiş bir yaklaşım benimsiyorum. Amacım yalnızca bugünkü zorlanmaları konuşmak değil; aynı zamanda iç görü kazanmanıza, duygularınızı daha iyi anlamanıza ve kendi kaynaklarınızı fark etmenize eşlik etmek.
               </p>
               <p className="text-lg text-foreground leading-relaxed">
-                Uzmanlık alanlarım arasında obezite tedavisi, diyabet yönetimi, sporcu beslenmesi 
-                ve çocuk beslenmesi yer alıyor. Her yaştan danışana hitap eden kişiselleştirilmiş 
-                programlar hazırlıyorum.
+                Psikolojik iyi oluşun, yaşamın her alanına yayılan bir denge hali olduğuna inanıyorum. Bu nedenle süreci; güven ilişkisi, düzenli takip ve birlikte düşünme odağında, sizi güçlendiren bir yolculuk olarak tasarlıyorum.
               </p>
             </CardContent>
           </Card>
         </div>
 
-        {/* Achievements Grid */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-center text-foreground mb-12">
-            Uzmanlık Alanları
+            Çalışma İlkelerim
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
@@ -110,10 +99,9 @@ const About = () => {
           </div>
         </div>
 
-        {/* Timeline */}
         <div>
           <h3 className="text-3xl font-bold text-center text-foreground mb-12">
-            Kariyer Yolculuğu
+            Danışmanlık Süreci
           </h3>
           <div className="max-w-4xl mx-auto">
             {timeline.map((item, index) => (

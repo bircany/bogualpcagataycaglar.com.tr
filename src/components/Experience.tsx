@@ -6,71 +6,67 @@ import { Badge } from '@/components/ui/badge';
 const Experience = () => {
   const experiences = [
     {
-      period: "2024 - Günümüz",
-      title: "Klinik Beslenme Uzmanı - Özel Pratik",
-      description: "Kişiselleştirilmiş beslenme danışmanlığı ve online koçluk hizmetleri. 500+ başarılı danışan.",
+      period: 'Danışmanlık Yaklaşımı',
+      title: 'Kişiye Özel ve Süreç Odaklı Çalışma',
+      description: 'Her danışmanlık sürecini bireyin yaşam koşullarına, duygusal ihtiyaçlarına ve kendi hızına uygun biçimde yapılandırırım.',
       responsibilities: [
-        "Bireysel beslenme planları hazırlama",
-        "Online danışmanlık platformu yönetimi",
-        "Grup eğitimleri ve seminerler",
-        "Kurumsal beslenme danışmanlığı"
-      ]
+        'Danışanın ihtiyacına göre görüşme planı oluşturma',
+        'Sürece uygun hedefleri birlikte belirleme',
+        'Düzenli değerlendirme ve takip sağlama',
+        'Güvenli ve yargısız bir görüşme alanı sunma',
+      ],
     },
     {
-      period: "2020 - 2024",
-      title: "Klinik Diyetisyen - Acıbadem Hastanesi",
-      description: "Yatan hasta takibi, tıbbi beslenme tedavisi ve multidisipliner hasta bakımı.",
+      period: 'Çalışma İlkeleri',
+      title: 'Etik, Sınırlar ve Güven',
+      description: 'Danışmanlık ilişkisinde gizlilik, açıklık, karşılıklı güven ve profesyonel sınırları temel alırım.',
       responsibilities: [
-        "Hastane içi beslenme protokolleri",
-        "Tıbbi beslenme tedavisi planları",
-        "Hasta ve hasta yakını eğitimleri",
-        "Klinik araştırma projeleri"
-      ]
+        'Mahremiyete özen gösterme',
+        'Etik çerçevede danışmanlık yürütme',
+        'Danışanla şeffaf iletişim kurma',
+        'Süreçte güven ilişkisini koruma',
+      ],
     },
     {
-      period: "2018 - 2020",
-      title: "Araştırma Görevlisi - İstanbul Üniversitesi",
-      description: "Yüksek lisans eğitimi ve beslenme bilimi araştırmaları.",
+      period: 'Görüşme Düzeni',
+      title: 'Online ve Yüz Yüze Destek',
+      description: 'İhtiyacınıza ve yaşam temponuza göre online ya da yüz yüze danışmanlık seçenekleriyle esnek bir görüşme düzeni sunarım.',
       responsibilities: [
-        "Akademik araştırma projeleri",
-        "Lisans öğrencilerine ders verme",
-        "Bilimsel yayın çalışmaları",
-        "Konferans ve seminer katılımları"
-      ]
-    }
+        'Online görüşme planlaması',
+        'Ofiste yüz yüze seans düzeni',
+        'Randevu takibi ve süreklilik',
+        'Ulaşılabilir ve yapılandırılmış süreç yönetimi',
+      ],
+    },
   ];
 
   const certifications = [
-    "Klinik Beslenme Sertifikası - Türk Diyetisyenler Derneği",
-    "Sporcu Beslenmesi Uzmanlık Sertifikası - ISSN",
-    "Çocuk Beslenmesi Sertifikası - ESPGHAN",
-    "Diyabet Eğitimcisi Sertifikası - Türkiye Endokrinoloji Derneği",
-    "Online Danışmanlık Sertifikası - ICF",
-    "Beslenme Koçluğu Sertifikası - NASM"
+    'Bireyin ihtiyaçlarını merkeze alan danışmanlık yaklaşımı',
+    'Gizlilik, etik ve profesyonel sınırlar doğrultusunda çalışma',
+    'Duygusal farkındalık ve öz güven temalı destek süreçleri',
+    'Kaygı, stres ve yaşam dönemlerine yönelik danışmanlık odağı',
+    'Online ve yüz yüze görüşme süreçlerinde yapılandırılmış takip',
+    'Güven ilişkisini merkeze alan sürdürülebilir çalışma biçimi',
   ];
 
   const publications = [
-    "Obez Çocuklarda Beslenme Alışkanlıklarının Değerlendirilmesi - Pediatri Dergisi, 2023",
-    "Sporcu Beslenmesinde Protein Gereksinimlerinin Analizi - Spor Bilimleri Dergisi, 2022",
-    "Diyabetik Hastalarda Karbonhidrat Sayımının Etkinliği - Endokrinoloji Dergisi, 2021"
+    'Danışanla kurulan güven ilişkisinin sürecin temel taşı olduğuna inanırım.',
+    'Her görüşmenin, kişinin kendini daha net duymasına ve anlamlandırmasına alan açmasını önemserim.',
+    'Psikolojik danışmanlık sürecini yalnızca sorun odaklı değil, güçlenme ve farkındalık odaklı da ele alırım.',
   ];
 
   return (
     <section id="experience" className="py-20 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Deneyim & Referanslar
+            Yaklaşımım ve Çalışma Biçimim
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            10 yıllık profesyonel deneyimim boyunca edindiğim bilgi birikimi
-            ve uzman sertifikalarımla size en iyi hizmeti sunuyorum.
+            Psikolojik danışmanlık sürecinde güvenli ilişki, etik çerçeve ve kişiye özel yapılandırılmış destek anlayışıyla ilerliyorum.
           </p>
         </div>
 
-        {/* CV Download CTA */}
         <div className="text-center mb-16">
           <Card className="card-professional max-w-lg mx-auto">
             <CardContent className="p-8 text-center">
@@ -81,9 +77,9 @@ const Experience = () => {
                 Detaylı CV'mi İndirin
               </h3>
               <p className="text-muted-foreground mb-6">
-                Tam eğitim geçmişim, deneyimim ve referanslarım için detaylı CV'mi inceleyebilirsiniz.
+                Eğitim geçmişim ve mesleki bilgilerime daha yakından göz atmak için CV dosyamı inceleyebilirsiniz.
               </p>
-              <a href="/Ayse-Kaya-CV.pdf" download="Ayse-Kaya-CV.pdf">
+              <a href="/Psk-Dan-RuveydaOzdemir.pdf" download="Psk-Dan-RuveydaOzdemir.pdf">
                 <Button size="lg" className="btn-cta">
                   <Download className="w-5 h-5 mr-2" />
                   PDF Olarak İndir
@@ -93,10 +89,9 @@ const Experience = () => {
           </Card>
         </div>
 
-        {/* Professional Experience */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-center text-foreground mb-12">
-            Mesleki Deneyim
+            Danışmanlık Çerçevesi
           </h3>
           <div className="space-y-8">
             {experiences.map((exp, index) => (
@@ -130,15 +125,12 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Certifications & Publications Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-
-          {/* Certifications */}
           <Card className="card-professional">
             <CardHeader>
               <CardTitle className="flex items-center text-2xl text-foreground">
                 <Award className="w-6 h-6 mr-3 text-primary" />
-                Sertifikalar & Uzmanlıklar
+                Mesleki Öncelikler
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -153,12 +145,11 @@ const Experience = () => {
             </CardContent>
           </Card>
 
-          {/* Publications */}
           <Card className="card-professional">
             <CardHeader>
               <CardTitle className="flex items-center text-2xl text-foreground">
                 <BookOpen className="w-6 h-6 mr-3 text-primary" />
-                Bilimsel Yayınlar
+                Danışmanlık Notları
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -172,16 +163,16 @@ const Experience = () => {
               <div className="mt-6 p-4 bg-primary/5 rounded-xl">
                 <div className="flex items-center text-primary mb-2">
                   <Users className="w-5 h-5 mr-2" />
-                  <span className="font-semibold">Araştırma İstatistikleri</span>
+                  <span className="font-semibold">Görüşme Düzeni</span>
                 </div>
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
-                    <div className="font-semibold text-foreground">15+</div>
-                    <div className="text-muted-foreground">Bilimsel Makale</div>
+                    <div className="font-semibold text-foreground">Online</div>
+                    <div className="text-muted-foreground">Uzaktan görüşme</div>
                   </div>
                   <div>
-                    <div className="font-semibold text-foreground">25+</div>
-                    <div className="text-muted-foreground">Konferans Katılımı</div>
+                    <div className="font-semibold text-foreground">Yüz Yüze</div>
+                    <div className="text-muted-foreground">Atakum ofisinde</div>
                   </div>
                 </div>
               </div>
