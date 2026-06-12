@@ -1,91 +1,54 @@
-import { Brain, Clock3, ShieldCheck, Users } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Check, GraduationCap, MessageCircle } from "lucide-react";
+import { trackContactConversion } from "@/lib/googleTag";
 
-const About = () => {
-  const principles = [
-    {
-      icon: Brain,
-      title: 'Düşünce Kalıpları',
-      description: 'Öğrencinin kendini sabote eden düşüncelerini fark etmesine ve yeniden yapılandırmasına yardımcı olurum.',
-    },
-    {
-      icon: ShieldCheck,
-      title: 'Duygu Düzenleme',
-      description: 'Kaygı, stres ve baskı anlarında duyguların nasıl yönetileceği üzerine çalışırım.',
-    },
-    {
-      icon: Users,
-      title: 'Bireysel Takip',
-      description: 'Her öğrencinin ihtiyacına göre yapılandırılmış, düzenli takip edilen bir süreç kurarım.',
-    },
-    {
-      icon: Clock3,
-      title: 'Sürdürülebilir Sistem',
-      description: 'Kısa süreli motivasyondan çok, kendi kendini sürdürebilen bir çalışma yapısı hedeflerim.',
-    },
-  ];
+const principles = ["Empati ve Anlayış", "Gizlilik ve Güven", "Profesyonellik", "Sürekli Gelişim", "Bireysel Yaklaşım", "Duygusal Destek"];
 
-  return (
-    <section id="about" className="py-20 bg-secondary/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Hakkımda
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Ben Psikolojik Danışman Ruveyda Özdemir. Öğrencilerin sınav sürecinde yalnızca ders değil,
-            zihin yönetimi de geliştirmesi gerektiğine inanıyorum.
-          </p>
-        </div>
-
-        <div className="mb-16">
-          <Card className="card-professional max-w-4xl mx-auto">
-            <CardContent className="p-8">
-              <p className="text-lg text-foreground leading-relaxed mb-6">
-                Yaklaşık 8 yıldır öğrencilerle çalışıyorum. Özellikle sınav sürecinde yaşanan psikolojik
-                süreçleri anlamaya ve yönetmeye odaklanıyorum. Çünkü sınav süreci sadece bilgiyle ilgili
-                değildir; öğrencinin zihniyle kurduğu ilişki, duygularını nasıl düzenlediği ve zorlandığı
-                anlarda nasıl tepki verdiği sürecin gidişatını belirler.
-              </p>
-              <p className="text-lg text-foreground leading-relaxed mb-6">
-                Görüşmelerimde öğrencinin yalnızca ders programını değil; düşünce kalıplarını, duygu
-                düzenleme becerilerini, dikkat ve odaklanma süreçlerini, erteleme davranışının altında
-                yatan mekanizmaları ve performans anındaki zihinsel tepkilerini birlikte ele alırım.
-              </p>
-              <p className="text-lg text-foreground leading-relaxed">
-                Amacım öğrenciyi geçici olarak motive etmek değil; kendi zihinsel süreçlerini tanıyan,
-                yöneten ve sürdürebilen bir yapı kurmasını sağlamaktır.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-center text-foreground mb-12">
-            Çalışma Odaklarım
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {principles.map((item, index) => (
-              <Card key={index} className="card-professional hover:shadow-card transition-all duration-300 group">
-                <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                    <item.icon className="w-8 h-8 text-primary" />
-                  </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-3">
-                    {item.title}
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
+const About = () => (
+  <section id="about" className="section-shell overflow-hidden bg-secondary/65">
+    <div className="mx-auto grid max-w-7xl items-start gap-14 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr] lg:px-8">
+      <div className="relative rounded-[2.5rem] bg-primary-dark p-8 text-primary-foreground shadow-card sm:p-10 lg:sticky lg:top-28 animate-blur-in">
+        <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-primary/30 blur-2xl" />
+        <GraduationCap className="mb-10 h-12 w-12 text-primary-light animate-pulse" />
+        <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-primary-light">Akademik Altyapı</p>
+        <h3 className="mb-5 text-3xl font-bold leading-tight text-white">Ordu Üniversitesi</h3>
+        <p className="leading-7 text-white/75">Rehberlik ve Psikolojik Danışmanlık lisans ve yüksek lisans eğitimi.</p>
       </div>
-    </section>
-  );
-};
+
+      <div className="animate-blur-in [animation-delay:150ms]">
+        <p className="section-kicker">Hakkımda</p>
+        <h2 className="section-title text-gradient-dark">Bilimsel altyapı, insana özgü bir yaklaşım.</h2>
+        <div className="space-y-5 text-base leading-8 text-foreground/70 sm:text-lg">
+          <p>Ordu Üniversitesi Rehberlik ve Psikolojik Danışmanlık bölümünde tamamladığım lisans eğitimimin ardından, yine aynı üniversitede yüksek lisansımı bitirerek uzmanlığımı aldım.</p>
+          <p>Akademik altyapımı sahaya aktarırken; travma odaklı danışmanlık hizmetleri, aile ve çift ilişkileri ile kariyer ve eğitim danışmanlığı alanlarında profesyonel destek sunuyorum.</p>
+          <p>Aynı zamanda çocuk ve ergenlerin dikkat seviyelerini belirleyerek, onlara özel dikkat geliştirme programları uyguluyorum. Bireysel yolculuğunuzda, kendinizi daha iyi anlamlandırmanız ve potansiyelinizi açığa çıkarmanız için güvenli bir alan sunmak adına buradayım.</p>
+        </div>
+
+        <div className="mt-10 grid gap-3 sm:grid-cols-2">
+          {principles.map((principle) => (
+            <div key={principle} className="flex items-center gap-3 rounded-2xl border border-primary/15 bg-white/60 px-4 py-4 transition-all duration-300 hover:border-primary/45 hover:bg-white/90">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground"><Check className="h-4 w-4" /></span>
+              <span className="font-semibold text-foreground/80">{principle}</span>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+          <a
+            href="https://wa.me/905070314041"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => trackContactConversion("whatsapp", "about_cta")}
+            className="w-full sm:w-auto"
+          >
+            <button className="btn-cta inline-flex w-full items-center justify-center gap-2 py-3.5 px-7 text-sm sm:w-auto">
+              <MessageCircle className="h-4 w-4" /> WhatsApp ile Randevu Al
+            </button>
+          </a>
+          <p className="text-sm font-semibold text-muted-foreground">Altınordu / Ordu • Yüz Yüze Görüşme</p>
+        </div>
+      </div>
+    </div>
+  </section>
+);
 
 export default About;

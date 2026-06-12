@@ -2,11 +2,12 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Chatbot from "./components/Chatbot";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Index from "./pages/Index";
-import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
+import Privacy from "./pages/Privacy";
+import CookieConsent from "./components/CookieConsent";
+import AiAssistant from "./components/AiAssistant";
 
 const queryClient = new QueryClient();
 
@@ -16,10 +17,11 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Chatbot />
+        <CookieConsent />
+        <AiAssistant />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/gizlilik" element={<Privacy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

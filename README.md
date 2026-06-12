@@ -1,86 +1,90 @@
-# Welcome to your Lovable project
+# bogualpcagataycaglar.com.tr
 
-## Project info
+Uzman Psikolojik Danışman Bögüalp Çağatay Çağlar için hazırlanan kurumsal web sitesi.
 
-**URL**: https://lovable.dev/projects/32a35608-2f70-4ee4-bf21-9e017850cc09
+## Teknolojiler
 
-## How can I edit this code?
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- Vercel
 
-There are several ways of editing your application.
+## Yerel geliştirme
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/32a35608-2f70-4ee4-bf21-9e017850cc09) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
 npm run dev
 ```
 
-### Mentora route
+Üretim kontrolü:
 
-Mentora is kept as a separate project. The PDR site only exposes a route button that sends users to the Mentora app.
+```bash
+npm run lint
+npm run build
+```
 
-- Main entry route in PDR: `/mentora`
-- Legacy aliases: `/mentora/giris`, `/mentora/admin`, `/mentora/ogrenci`
-- Target URL is controlled by `VITE_MENTORA_URL`
-- Default local target: `http://localhost:3000/login`
+## GitHub deposu
 
-If you want the button to open a different host or path, set `VITE_MENTORA_URL` in your environment for the PDR project.
+```text
+https://github.com/bircany/bogualpcagataycaglar.com.tr
+```
 
-Environment variables are documented in [`.env.example`](./.env.example).
+## Vercel kurulumu
 
-**Edit a file directly in GitHub**
+1. Vercel'de **Add New > Project** seçeneğini açın.
+2. `bircany/bogualpcagataycaglar.com.tr` deposunu içe aktarın.
+3. Framework Preset olarak **Vite** kullanın.
+4. Build Command: `npm run build`
+5. Output Directory: `dist`
+6. Production domain olarak `bogualpcagataycaglar.com.tr` ve `www.bogualpcagataycaglar.com.tr` alan adlarını ekleyin.
+7. Tek bir ana alan adı seçip diğerini Vercel Domains ekranından ana alana yönlendirin. Sitedeki canonical adres `https://bogualpcagataycaglar.com.tr/` olarak ayarlanmıştır.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Google Ads ve Google tag
 
-**Use GitHub Codespaces**
+Google Ads hesabında iki web sitesi dönüşümü oluşturun:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Telefon bağlantısı tıklaması
+- WhatsApp bağlantısı tıklaması
 
-## What technologies are used for this project?
+Google Ads'in verdiği kimlikleri Vercel **Project Settings > Environment Variables** bölümüne ekleyin:
 
-This project is built with:
+```env
+VITE_GOOGLE_TAG_ID=AW-XXXXXXXXXX
+VITE_GOOGLE_ADS_ID=AW-XXXXXXXXXX
+VITE_GOOGLE_ADS_PHONE_CONVERSION_LABEL=XXXXXXXXXXXX
+VITE_GOOGLE_ADS_WHATSAPP_CONVERSION_LABEL=XXXXXXXXXXXX
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Değişkenleri `Production`, `Preview` ve gerekirse `Development` ortamlarına ayrı ayrı tanımlayın. `VITE_` ile başlayan değerler tarayıcıya açıktır; bu alanlara gizli API anahtarı koymayın.
 
-## How can I deploy this project?
+Site şu olayları gönderir:
 
-Simply open [Lovable](https://lovable.dev/projects/32a35608-2f70-4ee4-bf21-9e017850cc09) and click on Share -> Publish.
+- `generate_lead` + `lead_source: phone`
+- `generate_lead` + `lead_source: whatsapp`
+- Ads dönüşüm etiketi: telefon ve WhatsApp için ayrı `send_to`
 
-## Can I connect a custom domain to my Lovable project?
+Google etiketi kullanıcı izin vermeden yüklenmez. Çerez tercihi Google Consent Mode v2 sinyallerine bağlanmıştır.
 
-Yes, you can!
+## SEO yayına alma kontrolü
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Domain yayına alındıktan sonra Google Search Console'a `bogualpcagataycaglar.com.tr` alan adını ekleyin.
+2. DNS TXT kaydıyla alan adı sahipliğini doğrulayın.
+3. Sitemap olarak `https://bogualpcagataycaglar.com.tr/sitemap.xml` gönderin.
+4. Ana sayfayı URL Denetleme aracıyla kontrol edip dizine eklenmesini isteyin.
+5. Google Rich Results Test ile JSON-LD çıktısını doğrulayın.
+6. Google Tag Assistant ile izin ve dönüşüm olaylarını test edin.
+7. Google Business Profile üzerinde ad, telefon ve konum bilgisini sitedeki bilgilerle aynı tutun.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## SEO dosyaları
+
+- `index.html`: title, description, canonical, Open Graph ve JSON-LD
+- `public/robots.txt`: tarama kuralları ve sitemap adresi
+- `public/sitemap.xml`: dizine alınacak sayfalar
+- `public/og-image.png`: sosyal paylaşım görseli
+- `src/pages/Privacy.tsx`: gizlilik ve çerez bilgilendirmesi
+
+## Environment şablonu
+
+Gerekli değişkenler [`.env.example`](./.env.example) dosyasında yer alır. Yerel kullanımda `.env.local` oluşturun; gerçek kimlikleri repoya commit etmeyin.

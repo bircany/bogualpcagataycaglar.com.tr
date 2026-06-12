@@ -6,6 +6,15 @@ const NotFound = () => {
 
   useEffect(() => {
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
+    const robots = document.querySelector<HTMLMetaElement>('meta[name="robots"]');
+    const previousTitle = document.title;
+    const previousRobots = robots?.content;
+    document.title = "Sayfa Bulunamadı | Bögüalp Çağatay Çağlar";
+    if (robots) robots.content = "noindex, nofollow";
+    return () => {
+      document.title = previousTitle;
+      if (robots && previousRobots) robots.content = previousRobots;
+    };
   }, [location.pathname]);
 
   return (

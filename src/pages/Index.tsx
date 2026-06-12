@@ -2,34 +2,44 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
-import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
+import Faq from "@/components/Faq";
+import { Link } from "react-router-dom";
 
-const Index = () => {
-  return (
-    <div className="min-h-screen">
-      <Navbar />
+const Index = () => (
+  <div className="min-h-screen">
+    <Navbar />
+    <main>
       <Hero />
+      
+      {/* Vurucu Söz Bölümü */}
+      <section className="bg-secondary/25 py-16 text-center animate-blur-in [animation-delay:450ms]">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="relative py-8">
+            <span className="absolute -top-8 left-1/2 -translate-x-1/2 font-heading text-9xl font-extrabold text-primary/15 select-none leading-none">“</span>
+            <blockquote className="relative font-heading text-2xl font-bold italic leading-relaxed text-primary-dark sm:text-3xl lg:text-4xl">
+              “Kendinizi keşfettiğiniz her an yanınızda.”
+            </blockquote>
+            <p className="mt-6 text-xs font-bold uppercase tracking-[0.25em] text-foreground/60">Uzm. Psk. Dan. Bögüalp Çağatay Çağlar</p>
+          </div>
+        </div>
+      </section>
+
       <Services />
       <About />
-      <Blog />
+      <Faq />
       <Contact />
-
-      <footer className="bg-foreground text-background py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm">
-            © 2026 Psk. Dan. Ruveyda Özdemir. Tüm hakları saklıdır.
-          </p>
-          <p className="text-xs mt-2 opacity-80">
-            Öğrencilerin zihinsel süreçlerini anlamaya ve yönetmeye odaklanan danışmanlık yaklaşımı
-          </p>
-          <p className="text-xs mt-4 text-muted-foreground/60">
-            Present by SoftArtStudio
-          </p>
+    </main>
+    <footer className="border-t border-primary/10 bg-foreground py-8 text-background">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 text-center text-sm sm:px-6 md:flex-row md:text-left lg:px-8">
+        <p>© 2026 Uzman Psikolojik Danışman Bögüalp Çağatay Çağlar</p>
+        <div className="flex flex-wrap items-center justify-center gap-6 text-background/60">
+          <span>Altınordu / Ordu</span>
+          <Link to="/gizlilik" className="transition-colors hover:text-white">Gizlilik</Link>
         </div>
-      </footer>
-    </div>
-  );
-};
+      </div>
+    </footer>
+  </div>
+);
 
 export default Index;
