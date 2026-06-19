@@ -9,7 +9,7 @@ const NotFound = () => {
     const robots = document.querySelector<HTMLMetaElement>('meta[name="robots"]');
     const previousTitle = document.title;
     const previousRobots = robots?.content;
-    document.title = "Sayfa Bulunamadı | Bögüalp Çağatay Çağlar";
+    document.title = "Sayfa Bulunamadı | Böğüalp Çağatay Çağlar";
     if (robots) robots.content = "noindex, nofollow";
     return () => {
       document.title = previousTitle;

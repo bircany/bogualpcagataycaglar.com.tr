@@ -13,7 +13,7 @@ const Hero = () => (
           Altınordu / Ordu
         </div>
         <p className="mb-3 font-heading text-base font-semibold text-primary-dark sm:text-lg animate-blur-in [animation-delay:100ms]">Ordu'da Uzman Psikolojik Danışman</p>
-        <h1 className="mb-7 text-5xl font-bold leading-[1.25] text-foreground sm:text-6xl lg:text-7xl animate-blur-in [animation-delay:200ms] py-1"><span className="text-gradient-dark py-1 pr-2 inline-block">Bögüalp Çağatay</span>
+        <h1 className="mb-7 text-5xl font-bold leading-[1.25] text-foreground sm:text-6xl lg:text-7xl animate-blur-in [animation-delay:200ms] py-1"><span className="text-gradient-dark py-1 pr-2 inline-block">Böğüalp Çağatay</span>
           <span className="mt-1 block text-gradient-primary py-1 pr-2">Çağlar</span>
         </h1>
         <p className="mx-auto mb-9 max-w-2xl text-base leading-8 text-foreground/70 sm:text-lg lg:mx-0 animate-blur-in [animation-delay:300ms]">
@@ -42,14 +42,14 @@ const Hero = () => (
         <div className="relative overflow-hidden rounded-[2.5rem] border-4 border-white bg-white/40 shadow-card backdrop-blur-sm aspect-[3/4.2] w-full">
           <img
             src="/DSC_3770.jpg.jpeg"
-            alt="Uzman Psikolojik Danışman Bögüalp Çağatay Çağlar"
+            alt="Uzman Psikolojik Danışman Böğüalp Çağatay Çağlar"
             className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
             loading="eager"
           />
           {/* Glassmorphic caption overlay at the bottom */}
           <div className="absolute inset-x-4 bottom-4 rounded-[1.5rem] border border-white/40 bg-white/75 p-4 shadow-soft backdrop-blur-md text-center">
             <span className="block font-heading text-[10px] font-bold uppercase tracking-wider text-primary-dark">Uzm. Psikolojik Danışman</span>
-            <h4 className="mt-0.5 font-heading text-base font-bold text-foreground">Bögüalp Çağatay Çağlar</h4>
+            <h4 className="mt-0.5 font-heading text-base font-bold text-foreground">Böğüalp Çağatay Çağlar</h4>
           </div>
         </div>
       </div>

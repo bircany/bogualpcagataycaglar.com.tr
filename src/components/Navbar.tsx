@@ -36,7 +36,7 @@ const Navbar = () => {
             BÇ
           </span>
           <span className="hidden sm:block">
-            <span className="block font-heading text-sm font-bold leading-tight text-foreground">Bögüalp Çağatay Çağlar</span>
+            <span className="block font-heading text-sm font-bold leading-tight text-foreground">Böğüalp Çağatay Çağlar</span>
             <span className="block text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">Uzman Psikolojik Danışman</span>
           </span>
         </a>

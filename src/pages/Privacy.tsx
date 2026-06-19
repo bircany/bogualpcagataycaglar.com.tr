@@ -9,8 +9,8 @@ const Privacy = () => {
     const canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     const previousDescription = description?.content;
     const previousCanonical = canonical?.href;
-    document.title = "Gizlilik ve Çerez Politikası | Bögüalp Çağatay Çağlar";
-    if (description) description.content = "Bögüalp Çağatay Çağlar web sitesi gizlilik, çerez ve Google Ads ölçüm bilgilendirmesi.";
+    document.title = "Gizlilik ve Çerez Politikası | Böğüalp Çağatay Çağlar";
+    if (description) description.content = "Böğüalp Çağatay Çağlar web sitesi gizlilik, çerez ve Google Ads ölçüm bilgilendirmesi.";
     if (canonical) canonical.href = "https://bogualpcagataycaglar.com.tr/gizlilik";
     return () => {
       document.title = previousTitle;

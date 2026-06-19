@@ -22,7 +22,7 @@ export default function AiAssistant() {
     {
       id: "init-1",
       sender: "bot",
-      text: "Merhaba! Ben Uzman Psikolojik Danışman Bögüalp Çağatay Çağlar'ın dijital asistanıyım. Size seans süreçleri, MOXO dikkat testi veya randevular hakkında nasıl yardımcı olabilirim?",
+      text: "Merhaba! Ben Uzman Psikolojik Danışman Böğüalp Çağatay Çağlar'ın dijital asistanıyım. Size seans süreçleri, MOXO dikkat testi veya randevular hakkında nasıl yardımcı olabilirim?",
     },
   ]);
   const [inputValue, setInputValue] = useState("");

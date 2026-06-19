@@ -21,7 +21,7 @@ const Index = () => (
             <blockquote className="relative font-heading text-2xl font-bold italic leading-relaxed text-primary-dark sm:text-3xl lg:text-4xl">
               “Kendinizi keşfettiğiniz her an yanınızda.”
             </blockquote>
-            <p className="mt-6 text-xs font-bold uppercase tracking-[0.25em] text-foreground/60">Uzm. Psk. Dan. Bögüalp Çağatay Çağlar</p>
+            <p className="mt-6 text-xs font-bold uppercase tracking-[0.25em] text-foreground/60">Uzm. Psk. Dan. Böğüalp Çağatay Çağlar</p>
           </div>
         </div>
       </section>
@@ -34,7 +34,7 @@ const Index = () => (
     </main>
     <footer className="border-t border-primary/10 bg-foreground py-8 text-background">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 text-center text-sm sm:px-6 md:flex-row md:text-left lg:px-8">
-        <p>© 2026 Uzman Psikolojik Danışman Bögüalp Çağatay Çağlar</p>
+        <p>© 2026 Uzman Psikolojik Danışman Böğüalp Çağatay Çağlar</p>
         <div className="flex flex-wrap items-center justify-center gap-6 text-background/60">
           <span>Altınordu / Ordu</span>
           <Link to="/gizlilik" className="transition-colors hover:text-white">Gizlilik</Link>

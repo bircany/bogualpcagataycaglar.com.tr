@@ -1,6 +1,6 @@
 # bogualpcagataycaglar.com.tr
 
-Uzman Psikolojik Danışman Bögüalp Çağatay Çağlar için hazırlanan kurumsal web sitesi.
+Uzman Psikolojik Danışman Böğüalp Çağatay Çağlar için hazırlanan kurumsal web sitesi.
 
 ## Teknolojiler
 
