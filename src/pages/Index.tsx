@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
+import Articles from "@/components/Articles";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
 import { Link } from "react-router-dom";
@@ -27,6 +28,7 @@ const Index = () => (
 
       <Services />
       <About />
+      <Articles />
       <Faq />
       <Contact />
     </main>

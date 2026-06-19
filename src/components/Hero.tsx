@@ -14,8 +14,8 @@ const Hero = () => (
         </div>
         <p className="mb-3 font-heading text-base font-semibold text-primary-dark sm:text-lg animate-blur-in [animation-delay:100ms]">Ordu'da Uzman Psikolojik Danışman</p>
         <h1 className="mb-7 text-5xl font-bold leading-[1.25] text-foreground sm:text-6xl lg:text-7xl animate-blur-in [animation-delay:200ms] py-1">
-          <span className="text-gradient-dark py-1 px-1 inline-block">Bögüalp Çağatay</span>
-          <span className="mt-1 block text-gradient-primary py-1 px-1">Çağlar</span>
+          <span className="text-gradient-dark py-1 px-1 block w-fit mx-auto lg:mx-0">Bögüalp Çağatay</span>
+          <span className="mt-1 block text-gradient-primary py-1 px-1 w-fit mx-auto lg:mx-0">Çağlar</span>
         </h1>
         <p className="mx-auto mb-9 max-w-2xl text-base leading-8 text-foreground/70 sm:text-lg lg:mx-0 animate-blur-in [animation-delay:300ms]">
           Bireysel, çift ve aile danışmanlığından çocuk ve ergenlerde dikkat geliştirme çalışmalarına uzanan profesyonel destek süreci.

@@ -7,6 +7,7 @@ const navItems = [
   { name: "Ana Sayfa", href: "#hero" },
   { name: "Çalışma Alanları", href: "#services" },
   { name: "Hakkımda", href: "#about" },
+  { name: "Makaleler", href: "#articles" },
   { name: "Sık Sorulanlar", href: "#faq" },
   { name: "İletişim", href: "#contact" },
 ];
